@@ -32,6 +32,10 @@ class SwooleAT74 < AbstractPhpExtension
     args = %W[
       --enable-brotli
       --enable-openssl
+      --enable-http2
+      --enable-swoole-json
+      --enable-swoole-curl
+      --enable-cares
       --enable-swoole
       --with-openssl-dir=#{Formula["openssl@1.1"].opt_prefix}
       --with-brotli-dir=#{Formula["brotli"].opt_prefix}
